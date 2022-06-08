@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+</head>
+
+<body>
+    <h2>JavaScript HTML Events - on load: error</h2>
+    <img id = "myImg" src="non-existing-img.png" onerror="imgLoadError()">
+    <p>In this example we refer to an image that does not exist, therefore the onerror event occurs (alert box).</p>
+</body>
+
+<script>
+
+    
+
+       function imgLoadError(){
+        console.error("imgLoadError()");
+        alert("The image could not be loaded");
+       }
+    </script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+</head>
+
+<body>
+
+  <h2>JavaScript HTML Events - click</h2>
+  <p id="date"></p>
+
+  <!-- TODO add onclick event to call displayDate() -->
+  <button type="button">Click me to display Date.</button>
+
+</body>
+
+<script>
+  function displayDate() {
+
+    document.getElementById("date").innerHTML = Date();
+
+    /*
+      TODO
+      - display Date in the "date" paragraph
+    */
+  }
+  const button = document.querySelector("button");
+  button.addEventListener("click",()=>{
+    displayDate();
+})
+</script>
+
+</html>
